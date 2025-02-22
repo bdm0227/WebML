@@ -11,11 +11,14 @@
       const canvas = document.querySelector("canvas");
 
       if (!navigator.gpu) {
-      throw new Error("WebGPU not supported on this browser.");
-      console.log('1');
+          throw new Error("WebGPU not supported on this browser.");
+          console.log('1');
       }
 
-      
+      const adapter = await navigator.gpu.requestAdapter();
+      if (!adapter) {
+          throw new Error("No appropriate GPUAdapter found.");
+      }
       
       // Your WebGPU code will begin here!
     </script>
