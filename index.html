@@ -10,6 +10,13 @@
     <script type="module">
       const canvas = document.querySelector("canvas");
 
+      if (!navigator.gpu) {
+      throw new Error("WebGPU not supported on this browser.");
+      console.log('1');
+      }
+
+      
+      
       // Your WebGPU code will begin here!
     </script>
   </body>
