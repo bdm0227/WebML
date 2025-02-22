@@ -19,6 +19,10 @@
       if (!adapter) {
           throw new Error("No appropriate GPUAdapter found.");
       }
+
+      const device = await adapter.requestDevice();
+
+      
       
       // Your WebGPU code will begin here!
     </script>
