@@ -1,6 +1,7 @@
 
 function print_mbp(text)
 {
-  return document.getElementById("#print").insertAdjacentText("beforeend", text);
+  let prt = document.getElementById("print");
+  prt.insertAdjacentText("beforeend", "Something Working");
 }
 
