@@ -2,7 +2,7 @@ import * as mbp from "common.js";
 
 function initForAll()
 {
-      mbp.print_mbp("개씨발 진짜 좀 돼라");
+      mbp.print("개씨발 진짜 좀 돼라");
       
       let canvas = document.querySelector("#canvas");
 
