@@ -1,5 +1,5 @@
 
-function main()
+function InitForAll()
 {
       let prt = document.getElementById("#print");
       prt.insertAdjacentText("beforeend", "Something Working");
