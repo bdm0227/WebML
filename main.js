@@ -1,6 +1,8 @@
 
 function main()
 {
+      alert("씨발");
+      
       const canvas = document.querySelector("#canvas");
 
       const adapter = await navigator.gpu.requestAdapter();
