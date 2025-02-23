@@ -9,12 +9,12 @@
   <body>
     <!--<canvas id="canvas" width="512" height="512"></canvas>-->
     <canvas width="512" height="512"></canvas>
+    <script src="main.js">main()<\script>
     <script type="module">
       const canvas = document.querySelector("canvas");
 
       if (!navigator.gpu) {
           throw new Error("WebGPU not supported on this browser.");
-          console.log('1');
       }
 
       const adapter = await navigator.gpu.requestAdapter();
