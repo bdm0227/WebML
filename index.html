@@ -19,7 +19,8 @@
     <script>
       function print_mbp(text)
 {
-   document.getElementById("print").insertAdjacentText("beforeend", text);
+   let prt = document.getElementById("print");
+      prt.insertAdjacentText("beforeend", "Something Working");
 }
       print_mbp("되라 좀");
     </script>
