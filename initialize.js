@@ -2,7 +2,7 @@ import * as mbp from "common.js";
 
 function initForAll()
 {
-      mbp.print_mbp("dd");
+      mbp.print_mbp("print2", "dd");
       
       let canvas = document.querySelector("#canvas");
 
