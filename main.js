@@ -1,7 +1,8 @@
 
 function main()
 {
-      alert("씨발");
+      let prt = document.getElementById("#print");
+      prt.insertAdjacentText("beforeend", "Something Working");
       
       const canvas = document.querySelector("#canvas");
 
