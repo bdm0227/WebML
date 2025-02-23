@@ -35,5 +35,7 @@ function main()
       pass.end();
 
       device.queue.submit([encoder.finish()]);
+
+      alert("Something works");
 }
 
