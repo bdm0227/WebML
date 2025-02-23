@@ -1,4 +1,4 @@
-export function print_mbp();
+export { print_mbp };
 
 function print_mbp(id, text)
 {
