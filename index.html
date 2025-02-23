@@ -14,7 +14,10 @@
     <h1>업데이트 횟수 : 7</h1>
     <h2 id="print">js 출력 : </h2>
 
-    <script src="common.js">print_mbp("된다!");</script>
+    <script src="common.js">
+      let prt = document.getElementById("print");
+      prt.insertAdjacentText("beforeend", "Something Working");
+    </script>
 
     <!--<script>
       let prt = document.getElementById("print");
