@@ -1,9 +1,6 @@
 
 function InitForAll()
 {
-      let prt = document.getElementById("#print");
-      prt.insertAdjacentText("beforeend", "Something Working");
-      
       const canvas = document.querySelector("#canvas");
 
       const adapter = await navigator.gpu.requestAdapter();
