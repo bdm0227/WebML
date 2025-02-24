@@ -1,9 +1,6 @@
-import * as cmm from "common.js";
 
 function initForAll()
 {
-      cmm.print_mbp("print2", "dd");
-      /**
       let canvas = document.querySelector("#canvas");
 
       let adapter = await navigator.gpu.requestAdapter();
@@ -28,6 +25,6 @@ function initForAll()
 
       pass.end();
 
-      device.queue.submit([encoder.finish()]);*/
+      device.queue.submit([encoder.finish()]);
 }
 
