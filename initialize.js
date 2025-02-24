@@ -1,8 +1,8 @@
-import * as mbp from "common.js";
+import * as cmm from "common.js";
 
 function initForAll()
 {
-      mbp.print_mbp("print2", "dd");
+      cmm.print_mbp("print2", "dd");
       /**
       let canvas = document.querySelector("#canvas");
 
