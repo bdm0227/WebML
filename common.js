@@ -5,5 +5,5 @@ function print_mbp(id, text)
   textForPrint.insertAdjacentText("beforeend", text);
 }
 
-//export { print_mbp };
+export { print_mbp };
 
