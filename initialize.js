@@ -28,3 +28,4 @@ async function initForAll()
       device.queue.submit([encoder.finish()]);
 }
 
+export { initForAll };
