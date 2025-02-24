@@ -1,8 +1,9 @@
-import initForAll from "./initialize.js";
+//import initForAll from "./initialize.js";
 
 function main()
 {
-  initForAll();
+  //initForAll();
+  document.getElementById("print").insertAdjacentText("beforeend", "dd");
 }
 
 main();
