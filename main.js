@@ -1,9 +1,9 @@
 import * as cmm from "common.js";
-import initForAll from "initialize.js";
+//import initForAll from "initialize.js";
 
 function main()
 {
-  initForAll();
+  cmm.print_mbp("print1", "dcdcd");
 }
 
 main();
