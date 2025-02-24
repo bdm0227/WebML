@@ -1,5 +1,5 @@
 
-function initForAll()
+async function initForAll()
 {
       let canvas = document.querySelector("#canvas");
 
