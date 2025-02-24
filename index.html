@@ -7,24 +7,10 @@
   </head>
   <body>
     <canvas id="canvas" width="512" height="512"></canvas>
-    
-    <h1>업데이트 횟수 : 52</h1>
-    <h2 id="print">js 출력 : </h2>
-
-    <script src="main.js" type="module"></script>
-    
-    <!--<script type="module">
+    <script type="module">
       const canvas = document.querySelector("canvas");
 
-      if (!navigator.gpu) {
-          throw new Error("WebGPU not supported on this browser.");
-      }
-
       const adapter = await navigator.gpu.requestAdapter();
-      if (!adapter) {
-          throw new Error("No appropriate GPUAdapter found.");
-      }
-
       const device = await adapter.requestDevice();
 
       const context = canvas.getContext("webgpu");
@@ -47,6 +33,6 @@
       pass.end();
 
       device.queue.submit([encoder.finish()]);
-    </script>-->
+    </script>
   </body>
 </html>
