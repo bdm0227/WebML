@@ -1,8 +1,8 @@
-import prtById from "./common.js";
+import * as cmm from "./common.js";
 
 function main()
 {
-  prtById("print", "ff");
+  cmm.prtById("print", "ff");
   //initForAll();
   //document.getElementById("print").insertAdjacentText("beforeend", "dd");
 }
