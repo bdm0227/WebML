@@ -2,7 +2,7 @@
 async function initForAll()
 {
       let canvas = document.querySelector("#canvas");
-
+/**
       let adapter = await navigator.gpu.requestAdapter();
       let device = await adapter.requestDevice();
 
@@ -25,7 +25,7 @@ async function initForAll()
 
       pass.end();
 
-      device.queue.submit([encoder.finish()]);
+      device.queue.submit([encoder.finish()]);*/
 }
 
 export { initForAll };
