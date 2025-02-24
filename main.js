@@ -1,9 +1,4 @@
-//import initForAll from "./initialize.js";
-
-function prtById(id, text)
-{
-  document.getElementById(id).insertAdjacentText("beforeend", text);
-}
+import prtById from "./common.js";
 
 function main()
 {
