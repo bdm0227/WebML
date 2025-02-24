@@ -15,7 +15,12 @@
     <script src="main.js" type="module"></script>
 
     <script>
-      
+      function print_mbp(id, text)
+{
+  let textForPrint = document.getElementById(id);
+  textForPrint.insertAdjacentText("beforeend", text);
+}
+print_mbp("print2", "text");
     </script>
     
     <!--<script type="module">
