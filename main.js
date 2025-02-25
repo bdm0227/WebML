@@ -1,4 +1,4 @@
-import * as cmm from "common.js";
+import * as cmm from "./common.js";
 
 function main()
 {
