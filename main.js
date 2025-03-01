@@ -3,6 +3,12 @@ import * as cmm from "./common.js";
 async function main()
 {
   const canvas = document.querySelector("#canvas");
+
+  if (!navigator.gpu) {
+    cmm.printById("print2", "naviGpu");
+  }
+
+
   
   //const adapter = await navigator.gpu.requestAdapter();
   //const device = await adapter.requestDevice();
