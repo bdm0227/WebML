@@ -14,9 +14,9 @@ async function main()
       format: canvasFormat,
   });
 
-      /**const encoder = device.createCommandEncoder();
+  const encoder = device.createCommandEncoder();
 
-      const pass = encoder.beginRenderPass({
+      /**const pass = encoder.beginRenderPass({
           colorAttachments: [{
                   view: context.getCurrentTexture().createView(),
                   loadOp: "clear",
