@@ -7,14 +7,14 @@ async function main()
   const adapter = await navigator.gpu.requestAdapter();
   const device = await adapter.requestDevice();
 
-      /**const context = canvas.getContext("webgpu");
+      const context = canvas.getContext("webgpu");
       const canvasFormat = navigator.gpu.getPreferredCanvasFormat();
       context.configure({
           device: device,
           format: canvasFormat,
       });
 
-      const encoder = device.createCommandEncoder();
+      /**const encoder = device.createCommandEncoder();
 
       const pass = encoder.beginRenderPass({
           colorAttachments: [{
