@@ -4,7 +4,7 @@ function main()
 {
   cmm.prtById("print1", "It works!");
 
-  const canvas = document.querySelector("canvas");
+  const canvas = document.querySelector("#canvas");
   /**
       const adapter = await navigator.gpu.requestAdapter();
       const device = await adapter.requestDevice();
