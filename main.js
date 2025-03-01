@@ -1,6 +1,6 @@
 import * as cmm from "./common.js";
 
-function main()
+async function main()
 {
   const canvas = document.querySelector("#canvas");
   
