@@ -4,8 +4,8 @@ async function main()
 {
   const canvas = document.querySelector("#canvas");
   
-  const adapter = await navigator.gpu.requestAdapter();
-  const device = await adapter.requestDevice();
+  //const adapter = await navigator.gpu.requestAdapter();
+  //const device = await adapter.requestDevice();
 
       /**const context = canvas.getContext("webgpu");
       const canvasFormat = navigator.gpu.getPreferredCanvasFormat();
