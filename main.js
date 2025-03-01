@@ -16,15 +16,15 @@ async function main()
 
   const encoder = device.createCommandEncoder();
 
-      /**const pass = encoder.beginRenderPass({
-          colorAttachments: [{
-                  view: context.getCurrentTexture().createView(),
-                  loadOp: "clear",
-                  storeOp: "store",
-              }]
-      });
+  const pass = encoder.beginRenderPass({
+      colorAttachments: [{
+              view: context.getCurrentTexture().createView(),
+              loadOp: "clear",
+              storeOp: "store",
+          }]
+  });
 
-      pass.end();
+      /**pass.end();
 
       device.queue.submit([encoder.finish()]);*/
   cmm.prtById("print1", "It works!");
