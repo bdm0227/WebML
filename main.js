@@ -24,9 +24,10 @@ async function main()
           }]
   });
 
-      /**pass.end();
+  pass.end();
 
-      device.queue.submit([encoder.finish()]);*/
+  device.queue.submit([encoder.finish()]);
+  
   cmm.prtById("print1", "It works!");
 }
 
