@@ -7,9 +7,9 @@ async function main()
   if (!navigator.gpu) {
     cmm.printById("print2", "naviGpu");
   }
-
   const adapter = await navigator.gpu.requestAdapter();
-  //const device = await adapter.requestDevice();
+  
+  const device = await adapter.requestDevice();
 
       /**const context = canvas.getContext("webgpu");
       const canvasFormat = navigator.gpu.getPreferredCanvasFormat();
