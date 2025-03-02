@@ -1,22 +1,24 @@
 
-function createResource(buffer)
-{
-  
-}
-
-function updateResource(buffer, src)
+function createResource(capacity)
 {
   const gpuBuffer = device.createBuffer({
     mappedAtCreation: true,
-    size: 4,
+    size: capacity,
     usage: GPUBufferUsage.MAP_WRITE
   });
   const arrayBuffer = buffer.getMappedRange();
 
   new Uint8Array(arrayBuffer).set([0, 1, 2, 3]);
+
+  return gpuBuffer;
 }
 
-function readbackResource(buffer, dst)
+function updateResource(src)
+{
+  
+}
+
+function readbackResource(dst)
 {
   
 }
