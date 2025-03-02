@@ -1,25 +1,25 @@
 
-function createResource(capacity)
+function Resource(capacity)
 {
-  const gpuBuffer = device.createBuffer({
+  this.defaultBuffer = device.createBuffer({
     mappedAtCreation: true,
     size: capacity,
     usage: GPUBufferUsage.MAP_WRITE
   });
-  const arrayBuffer = buffer.getMappedRange();
+  this.arrayBuffer = this.defaultBuffer.getMappedRange();
 
-  new Uint8Array(arrayBuffer).set([0, 1, 2, 3]);
+  this.uploadBuffer = device.createBuffer({
+    mappedAtCreation: true,
+    size: capacity,
+    usage: GPUBufferUsage.MAP_WRITE | GPUBufferUsage.COPY_SRC
+  });
 
-  return gpuBuffer;
-}
+  this.UpdateFloat32 = function(src) {
+    new Float32Array(this.arrayBuffer).set(src);
+  }
 
-function updateResource(src)
-{
-  
-}
-
-function readbackResource(dst)
-{
-  
+  this.ReadBackFloat32 = function() {
+    
+  }
 }
 
