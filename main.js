@@ -28,7 +28,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);
   
-  cmm.prtById("print1", "It works!");
+  cmm.prtById("print1", "1");
 }
 
 main();
