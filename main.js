@@ -2,6 +2,8 @@ import * as cmm from "./common.js";
 
 async function main()
 {
+
+  /**
   const canvas = document.querySelector("#canvas");
   
   const adapter = await navigator.gpu.requestAdapter();
@@ -26,9 +28,9 @@ async function main()
 
   pass.end();
 
-  device.queue.submit([encoder.finish()]);
+  device.queue.submit([encoder.finish()]);*/
   
-  cmm.prtById("print1", "1");
+  cmm.prtById("print1", "2");
 }
 
 main();
