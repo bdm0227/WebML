@@ -3,7 +3,6 @@ import * as cmm from "./common.js";
 
 async function main()
 {
-  cmm.prtById("print2", "It works!");
   //let engine = new Engine();
   /**
   const canvas = document.querySelector("#canvas");
