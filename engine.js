@@ -1,7 +1,7 @@
 
 async function Engine()
 {
-  this.canvas = document.querySelector("#canvas");
+  //this.canvas = document.querySelector("#canvas");
   /**
   this.adapter = await navigator.gpu.requestAdapter();
   this.device = await this.adapter.requestDevice();
