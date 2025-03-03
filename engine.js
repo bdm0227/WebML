@@ -2,27 +2,29 @@
 async function Engine()
 {
   this.canvas = document.querySelector("#canvas");
-
+  
   this.adapter = await navigator.gpu.requestAdapter();
-  this.device = await adapter.requestDevice();
-
-  this.context = canvas.getContext("webgpu");
+  this.device = await this.adapter.requestDevice();
+  
+  this.context = this.canvas.getContext("webgpu");
   this.canvasFormat = navigator.gpu.getPreferredCanvasFormat();
-  context.configure({
-      device: device,
-       format: canvasFormat,
+  this.context.configure({
+      device: this.device,
+      format: this.canvasFormat,
   });
 
- this.encoder = device.createCommandEncoder();
- this.pass = encoder.beginRenderPass({
-    colorAttachments: [{
-      view: context.getCurrentTexture().createView(),
-      loadOp: "clear",
-      storeOp: "store",
-    }]
- });
-  
-  pass.end();
-  device.queue.submit([encoder.finish()]);
+  this.encoder = this.device.createCommandEncoder();
+
+  this.pass = this.encoder.beginRenderPass({
+      colorAttachments: [{
+              view: this.context.getCurrentTexture().createView(),
+              loadOp: "clear",
+              storeOp: "store",
+          }]
+  });
+
+  this.pass.end();
+
+  this.device.queue.submit([this.encoder.finish()]);
 }
 
