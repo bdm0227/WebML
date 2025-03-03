@@ -1,4 +1,5 @@
 import * as cmm from "./common.js";
+import { Engine } from "./engine.js";
 
 async function main()
 {
@@ -30,7 +31,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);*/
   
-  cmm.prtById("print1", "2");
+  cmm.prtById("print1", "3");
 }
 
 main();
