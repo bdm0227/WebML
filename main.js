@@ -2,7 +2,9 @@ import * as cmm from "./common.js";
 import Engine from "./engine.js";
 
 async function main()
-{/**
+{
+  Engine();
+  /**
   const canvas = document.querySelector("#canvas");
   
   const adapter = await navigator.gpu.requestAdapter();
