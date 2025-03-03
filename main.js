@@ -1,7 +1,7 @@
 import * as cmm from "./common.js";
 //import { Engine } from "./engine.js";
 
- function main()
+async function main()
 {
   //let engine = new Engine();
   /**
