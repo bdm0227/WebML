@@ -3,7 +3,7 @@ import Engine from "./engine.js";
 
 async function main()
 {
-  Engine();
+  let engine = new Engine();
   /**
   const canvas = document.querySelector("#canvas");
   
