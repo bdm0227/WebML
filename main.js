@@ -1,5 +1,5 @@
 import * as cmm from "./common.js";
-import Engine from "./engine.js";
+import { Engine } from "./engine.js";
 
 async function main()
 {
