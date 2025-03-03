@@ -26,5 +26,13 @@ async function Engine()
   this.pass.end();
 
   this.device.queue.submit([this.encoder.finish()]);
+
+  this.clearTask = function() {
+    
+  }
+
+  this.drawScene = function() {
+    
+  }
 }
 
