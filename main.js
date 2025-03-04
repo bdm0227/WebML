@@ -1,10 +1,10 @@
 import * as cmm from "./common.js";
 import { Person } from "./engine.js";
 
-async function main()
+function main()
 {
   //let engine = new Engine();
-  var me = new await Person("velog");
+  var me = new Person("velog");
   
   /**
   const canvas = document.querySelector("#canvas");
