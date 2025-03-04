@@ -4,7 +4,7 @@ import { Person } from "./engine.js";
 function main()
 {
   //let engine = new Engine();
-  //var me = new Person("velog");
+  var me = new Person("velog");
   
   /**
   const canvas = document.querySelector("#canvas");
