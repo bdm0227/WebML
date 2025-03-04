@@ -1,7 +1,7 @@
 
 async function Engine()
 {
-  //this.canvas = document.querySelector("#canvas");
+  this.canvas = document.querySelector("#canvas");
   /**
   this.adapter = await navigator.gpu.requestAdapter();
   this.device = await this.adapter.requestDevice();
@@ -27,13 +27,13 @@ async function Engine()
 
   this.device.queue.submit([this.encoder.finish()]);*/
 
-  this.drawScene = function() {
+  /**this.drawScene = function() {
     
   }
 
   this.clearTask = function() {
     
-  }
+  }*/
 }
 
 export { Engine };
