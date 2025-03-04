@@ -4,7 +4,7 @@ import { Person } from "./engine.js";
 async function main()
 {
   //let engine = new Engine();
-  var me = new Person("velog");
+  //var me = new Person("velog");
   
   /**
   const canvas = document.querySelector("#canvas");
