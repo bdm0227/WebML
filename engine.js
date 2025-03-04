@@ -48,4 +48,4 @@ async function Engine()
   }*/
 }
 
-export { Engine };
+export { Engine, Person };
