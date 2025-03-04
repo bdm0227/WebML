@@ -1,7 +1,18 @@
+function Person(arg) {
+
+    this.name = arg;
+
+    this.getName = function() {
+        return this.name;
+    }
+
+    this.setName = function(value) {
+        this.name = value;
+    }
+}
 
 async function Engine()
 {
-  this.name = 1;
   //this.canvas = document.querySelector("#canvas");
   /**
   this.adapter = await navigator.gpu.requestAdapter();
