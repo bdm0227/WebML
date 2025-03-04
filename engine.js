@@ -1,5 +1,5 @@
 
- function Engine()
+async function Engine()
 {
   //this.canvas = document.querySelector("#canvas");
   /**
