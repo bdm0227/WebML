@@ -1,10 +1,10 @@
 import * as cmm from "./common.js";
 import { Person } from "./engine.js";
 
-function main()
+async function main()
 {
   //let engine = new Engine();
-  var me = new Person("velog");
+  var me = new await Person("velog");
   
   /**
   const canvas = document.querySelector("#canvas");
@@ -33,7 +33,7 @@ function main()
 
   device.queue.submit([encoder.finish()]);*/
   
-  cmm.prtById("print1", "6");
+  cmm.prtById("print1", "7");
 }
 
 main();
