@@ -1,6 +1,7 @@
 
 async function Engine()
 {
+  this.name = 1;
   //this.canvas = document.querySelector("#canvas");
   /**
   this.adapter = await navigator.gpu.requestAdapter();
