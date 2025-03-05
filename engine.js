@@ -1,17 +1,5 @@
-function Person(arg) {
 
-    this.name = arg;
-
-    this.getName = async function() {
-        return this.name;
-    }
-
-    this.setName = function(value) {
-        this.name = value;
-    }
-}
-
-async function Engine()
+function Engine()
 {
   //this.canvas = document.querySelector("#canvas");
   /**
@@ -48,4 +36,4 @@ async function Engine()
   }*/
 }
 
-export { Person };
+export { Engine };
