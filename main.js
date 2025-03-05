@@ -1,11 +1,9 @@
 import * as cmm from "./common.js";
-import { Person } from "./engine.js";
+import { Engine } from "./engine.js";
 
 function main()
 {
-  //let engine = new Engine();
-  var me = new Person("velog");
-  let gg = me.getName();
+  let engine = new Engine();
   
   /**
   const canvas = document.querySelector("#canvas");
