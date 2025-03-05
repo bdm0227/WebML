@@ -2,7 +2,7 @@ function Person(arg) {
 
     this.name = arg;
 
-    this.getName = function() {
+    this.getName = async function() {
         return this.name;
     }
 
