@@ -5,6 +5,7 @@ function main()
 {
   //let engine = new Engine();
   var me = new Person("velog");
+  let gg = me.getName();
   
   /**
   const canvas = document.querySelector("#canvas");
