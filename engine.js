@@ -1,4 +1,4 @@
-function Person(arg) {
+async function Person(arg) {
 
     this.name = arg;
 
