@@ -3,8 +3,8 @@ import { Engine } from "./engine.js";
 
 function main()
 {
-  let engine = new Engine();
-  engine.init();
+  //let engine = new Engine();
+  //engine.init();
   
   /**
   const canvas = document.querySelector("#canvas");
