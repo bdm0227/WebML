@@ -33,7 +33,7 @@ function main()
 
   device.queue.submit([encoder.finish()]);*/
   
-  cmm.prtById("print1", "8");
+  cmm.prtById("print1", "9");
 }
 
 main();
