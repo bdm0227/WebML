@@ -1,12 +1,7 @@
 import * as cmm from "./common.js";
-import { Engine } from "./engine.js";
 
 function main()
 {
-  //let engine = new Engine();
-  //engine.init();
-  
-  /**
   const canvas = document.querySelector("#canvas");
   
   const adapter = await navigator.gpu.requestAdapter();
@@ -31,7 +26,7 @@ function main()
 
   pass.end();
 
-  device.queue.submit([encoder.finish()]);*/
+  device.queue.submit([encoder.finish()]);
   
   cmm.prtById("print1", "11");
 }
