@@ -3,8 +3,8 @@ import { Engine } from "./engine.js";
 
 function main()
 {
-  let engine = new Engine();
-  engine.init();
+  //let engine = new Engine();
+  //engine.init();
   
   /**
   const canvas = document.querySelector("#canvas");
@@ -33,7 +33,7 @@ function main()
 
   device.queue.submit([encoder.finish()]);*/
   
-  cmm.prtById("print1", "10");
+  cmm.prtById("print1", "11");
 }
 
 main();
