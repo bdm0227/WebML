@@ -2,7 +2,7 @@ import * as cmm from "./common.js";
 
 async function main()
 {
-  cmm.prtById("print1", "4");
+  cmm.prtById("print1", "5");
   
   const canvas = document.querySelector("#canvas");
   
@@ -15,6 +15,17 @@ async function main()
       device: device,
       format: canvasFormat,
   });
+
+  const vertices = new Float32Array([
+    //   X,    Y,
+    -0.8, -0.8, // Triangle 1 (Blue)
+    0.8, -0.8,
+    0.8,  0.8,
+
+    -0.8, -0.8, // Triangle 2 (Red)
+     0.8,  0.8,
+    -0.8,  0.8,
+  ]);
 
   const encoder = device.createCommandEncoder();
 
@@ -31,7 +42,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);
   
-  cmm.prtById("print2", "4");
+  cmm.prtById("print2", "5");
 }
 
 main();
