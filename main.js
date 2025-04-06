@@ -26,6 +26,12 @@ async function main()
     0.8,  0.8,
    -0.8,  0.8,
   ]);
+  
+  const vertexBuffer = device.createBuffer({
+    label: "Cell vertices",
+    size: vertices.byteLength,
+    usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
+  });
 
   const encoder = device.createCommandEncoder();
 
