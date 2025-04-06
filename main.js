@@ -15,7 +15,7 @@ async function main()
       device: device,
       format: canvasFormat,
   });
-
+/*
   const vertices = new Float32Array([
     //   X,    Y,
     -0.8, -0.8, // Triangle 1 (Blue)
