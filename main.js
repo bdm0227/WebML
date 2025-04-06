@@ -24,7 +24,7 @@ async function main()
 
    -0.8, -0.8, // Triangle 2 (Red)
     0.8,  0.8,
-   -0.8,  0.8,
+   -0.8,  0.8
   ]);
   /*
   const vertexBuffer = device.createBuffer({
