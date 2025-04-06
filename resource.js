@@ -1,5 +1,5 @@
 
-function Resource(capacity)
+function Resource(device, capacity)
 {
   this.defaultBuffer = device.createBuffer({
     mappedAtCreation: true,
