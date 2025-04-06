@@ -2,7 +2,7 @@ import * as cmm from "./common.js";
 
 async function main()
 {
-  cmm.prtById("print1", "1");
+  cmm.prtById("print1", "2");
   
   const canvas = document.querySelector("#canvas");
   
@@ -20,7 +20,8 @@ async function main()
 
   const pass = encoder.beginRenderPass({
       colorAttachments: [{
-              view: context.getCurrentTexture().createView(),
+              view: context.getCurrentTexture().createView(), 
+              clearValue: { r: 0, g: 0, b: 0.4, a: 1 },
               loadOp: "clear",
               storeOp: "store",
           }]
@@ -30,7 +31,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);
   
-  cmm.prtById("print2", "1");
+  cmm.prtById("print2", "2");
 }
 
 main();
