@@ -2,7 +2,7 @@ import * as cmm from "./common.js";
 
 async function main()
 {
-  cmm.prtById("print1", "8");
+  cmm.prtById("print1", "9");
   
   const canvas = document.querySelector("#canvas");
   
@@ -34,6 +34,15 @@ async function main()
   });
   device.queue.writeBuffer(vertexBuffer, /*bufferOffset=*/0, vertices);
 
+  const vertexBufferLayout = {
+    arrayStride: 8,
+    attributes: [{
+    format: "float32x2",
+    offset: 0,
+    shaderLocation: 0, // Position, see vertex shader
+    }],
+  };
+
   const encoder = device.createCommandEncoder();
 
   const pass = encoder.beginRenderPass({
@@ -49,7 +58,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);
   
-  cmm.prtById("print2", "8");
+  cmm.prtById("print2", "9");
 }
 
 main();
