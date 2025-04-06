@@ -2,7 +2,7 @@ import * as cmm from "./common.js";
 
 async function main()
 {
-  cmm.prtById("print1", "7");
+  cmm.prtById("print1", "8");
   
   const canvas = document.querySelector("#canvas");
   
@@ -49,7 +49,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);
   
-  cmm.prtById("print2", "7");
+  cmm.prtById("print2", "8");
 }
 
 main();
