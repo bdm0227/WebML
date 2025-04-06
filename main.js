@@ -2,7 +2,7 @@ import * as cmm from "./common.js";
 
 async function main()
 {
-  cmm.prtById("print1", "6");
+  cmm.prtById("print1", "7");
   
   const canvas = document.querySelector("#canvas");
   
@@ -26,13 +26,13 @@ async function main()
      0.8,  0.8,
     -0.8,  0.8,
   ]);
-/*
+
   const vertexBuffer = device.createBuffer({
     label: "Cell vertices",
     size: vertices.byteLength,
     usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
   });
-*/
+
   const encoder = device.createCommandEncoder();
 
   const pass = encoder.beginRenderPass({
@@ -48,7 +48,7 @@ async function main()
 
   device.queue.submit([encoder.finish()]);
   
-  cmm.prtById("print2", "6");
+  cmm.prtById("print2", "7");
 }
 
 main();
