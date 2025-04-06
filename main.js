@@ -32,6 +32,7 @@ async function main()
     size: vertices.byteLength,
     usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
   });
+  device.queue.writeBuffer(vertexBuffer, /*bufferOffset=*/0, vertices);
 
   const encoder = device.createCommandEncoder();
 
