@@ -15,7 +15,7 @@ async function main()
       device: device,
       format: canvasFormat,
   });
-
+/*
   const vertices = new Float32Array([
     //   X,    Y,
     -0.8, -0.8, // Triangle 1 (Blue)
@@ -27,7 +27,12 @@ async function main()
    -0.8,  0.8,
   ]);
   
-  
+  const vertexBuffer = device.createBuffer({
+    label: "Cell vertices",
+    size: vertices.byteLength,
+    usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
+  });
+  device.queue.writeBuffer(vertexBuffer, 0, vertices);*/
 
   const encoder = device.createCommandEncoder();
 
